@@ -19,7 +19,7 @@ const wcAxios = axios.create({
 });
 
 // Enable CORS for all domains
-app.use(cors());
+app.use(cors({origin:'https://nt-bms.com'}));
 
 // Middleware to parse JSON requests
 app.use(express.json());
